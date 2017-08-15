@@ -1,0 +1,244 @@
+/*===============================================      INDEX Page     ===================================================*/
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans Light', X-LocaleSpecific-Light, 'Open Sans', X-LocaleSpecific, sans-serif;
+    text-align: justify;
+    background-color: #EEEEEE;
+    letter-spacing: -0.035em;
+}
+
+.logBack {
+    background: url('../images/back02.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #232323;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.navbar-brand {
+    padding: 15px 0px;
+}
+
+input.ng-dirty,
+input.ng-touched-ng-invalid,
+input.ng-invalid:focus {
+    box-shadow: 5px 0 0 #AA0000;
+    border: 1px solid #AA0000;
+    outline-color: #AA0000;
+}
+
+input.ng-invalid.ng-pristine:focus,
+input.ng-touched:focus {
+    box-shadow: 0 0 5px #AAA000;
+    border-color: #AAA000;
+}
+
+input.ng-valid,
+input.ng-valid:focus,
+.success {
+    box-shadow: 5px 0 0 #4A742A;
+    border-color: #4A742A;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.footer>table>thead>tr>td,
+.footer>table>thead>tr>th,
+.footer>table>tbody>tr>td,
+.footer>table>tbody>tr>th {
+    font-size: 14px;
+    border: none;
+}
+
+
+
+/*tr:nth-child(even) {
+    color: #EEEEEE;
+    background-color: #111111;
+}*/
+
+.form_container {
+    background-color: #E2D9BA;
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 2px;
+    border-width: 0px;
+    margin: 0px 2.5px;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.page_title {
+    font-weight: bold;
+    margin-top: 75px;
+    font-size: 70px;
+    color: #111111;
+}
+.page_title_main {
+    font-weight: bold;
+    font-size: 70px;
+    color: #111111;
+}
+
+.less_mrg_top {
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+
+.btn-info {
+    background-color: #79B837;
+}
+
+.btn-success {
+    background-color: #9DCE5C;
+}
+
+.btn-danger {
+    background-color: #C7EB6E;
+}
+
+.container_dark_grey {
+    background-color: #111111;
+}
+
+.boxed_item_main {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid 2px #111111;
+    box-sizing: border-box;
+    font-size: 60px;
+    color: #111111;
+    text-align: center;
+    margin: 30px 0;
+}
+.boxed_item {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid 2px #EEEEEE;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.boxed_item:hover {
+    border: solid 2px #EFEFEF;
+    color: #EFEFEF;
+}
+
+.logo_bold {
+    font-weight: 800;
+}
+
+a {
+    color: #BAA378;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #BAA378;
+    font-weight: 400;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.mrgn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.small_mrgn {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.inputX {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    height: 46px;
+    font-color: #121212;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Open Sans Light', X-LocaleSpecific-Light, 'Open Sans', X-LocaleSpecific, sans-serif;
+    padding-left: 5px;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 769px) {
+.logBack1 {
+        background: rgba(240, 240, 240, 0.9);
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        position: inherit;
+        border-radius: 5px;
+    }}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .logBack1 {
+        background: rgba(240, 240, 240, 0.9);
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        position: inherit;
+        border-radius: 5px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .logBack1 {
+        background: rgba(240, 240, 240, 0.9);
+        width: 100%;
+        position: inherit;
+        border-radius: 5px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
