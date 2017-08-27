@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Employees Portal</title>
     <base href="/Employees-Project/">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,7 +18,7 @@
     <script src="js/library/ui-bootstrap-tpls-1.1.2.js"></script>
     <script src="js/library/angular-modal-service.js"></script>
     <!--APP LOAD-->
-    <script src="js/app.js"></script>
+    <script src="js/appFront.js"></script>
     <!--SERVICES-->
     <script src="js/services/localStorage.service.js"></script>
     <!--CONTROLLERS-->
@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li ng-class="{active: $state.includes('home')}"><a ui-sref="public.home" ui-sref-active="active" class="btn" role="button"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                        <li ng-class="{active: $state.includes('about')}"><a ui-sref="public.about" ui-sref-active="active" class="btn" role="button">About</a></li>
+                        <li ng-class="{active: $state.includes('about')}"><a ui-sref="public.about" ui-sref-active="active" class="btn" role="button">About/FAQ</a></li>
                         <li ng-class="{active: $state.includes('employeeFact')}"><a ui-sref="public.employeeFact" ui-sref-active="active" class="btn" role="button">Employees factory</a></li>
                         <li ng-class="{active: $state.includes('login')}"><a ui-sref="public.addEmployee" ui-sref-active="active" class="btn" role="button">Add new employee</a></li>
                         <li ng-class="{active: $state.includes('contact')}"><a ui-sref="public.contact" ui-sref-active="active" class="btn" role="button">Contact Us</a></li>

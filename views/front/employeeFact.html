@@ -11,22 +11,16 @@
                     <tr>
                         <th class="center">Employees names</th>
                         <th class="center">
-                            Credentials
-                        </th>
-                        <th class="center">
                             Edit / Delete
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="x in employees track by $index">
-                        <td>{{x.firstName}} {{x.lastName}}</td>
-                        <td class="center">
-                            <button class="btn btn-info btn-sm" ng-click="showCredentials(lg, x)" >Show credetials</button>
-                        </td>
+                    <tr ng-repeat="x in employees track by $index" ng-click="showCredentials(lg, x)">
+                        <td style="padding-left: 15px;">{{x.firstName}} {{x.lastName}}</td>
                         <td>
-                            <button ng-click="deleteEntry(x)" class="btn btn-danger btn-sm pull-right">Delete</button>
-                            <button ng-click="editEntry(x)" class="btn btn-success btn-sm pull-right">Edit</button>
+                            <img class="btn_cred_fact" ng-click="delete()" src="images/icons/delete.png">
+                            <img class="btn_cred_fact" ng-click="edit()" src="images/icons/edit.png">
                         </td>
                     </tr>
                 </tbody>

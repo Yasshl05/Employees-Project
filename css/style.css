@@ -59,7 +59,7 @@ td,
 th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 15px;
 }
 
 .footer>table>thead>tr>td,
@@ -365,6 +365,11 @@ a:hover {
     margin-right: 15px;
 }
 
+.btn_cred_fact {
+float: right;
+    margin-right: 15px;
+}
+
 .faq {
     width: 100%;
     margin: 10px 0;
@@ -384,4 +389,14 @@ a:hover {
     font-size: 16px;
     font-weight: lighter;
     font-style: italic;
+}
+
+tbody>tr{
+    height: 40px;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+tbody>tr:hover{
+    background-color: #FFFFFF;
 }
