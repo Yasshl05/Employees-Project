@@ -67,7 +67,8 @@ angular
             insuranceNumber: '7845148596',
             insuranceExpiryDate: '02-12-2021',
             profession: 'Web Developer',
-            company: 'X-Revolution GmbH'
+            company: 'X-Revolution GmbH',
+            image: 'anja.jpeg'
         }, {
             id: 1,
             firstName: 'Thomas',
@@ -79,7 +80,47 @@ angular
             insuranceNumber: '8574896102',
             insuranceExpiryDate: '05-05-2020',
             profession: 'Werkstudent',
-            company: 'XING GmbH'
+            company: 'XING GmbH',
+            image: 'thomas.jpeg'
+        }, {
+            id: 2,
+            firstName: 'Kyle',
+            lastName: 'Merlyn',
+            email: 'Kyle@Merlyn.org',
+            phoneNumber: '016252532151',
+            address: 'Chiyo Nay 4',
+            city: 'Shaghai',
+            insuranceNumber: '0441184875',
+            insuranceExpiryDate: '31-08-2025',
+            profession: 'Consultant',
+            company: 'Metros AG',
+            image: 'kyle.jpeg'
+        }, {
+            id: 3,
+            firstName: 'Sebil',
+            lastName: 'Derean',
+            email: 'Sebil@Derean.org',
+            phoneNumber: '014151664531',
+            address: 'Balkan Avenue 12',
+            city: 'Sao Paolo',
+            insuranceNumber: '7564025651',
+            insuranceExpiryDate: '01-12-2023',
+            profession: 'HR Team Leader',
+            company: 'Fartas Co',
+            image: 'sebil.jpeg'
+        }, {
+            id: 4,
+            firstName: 'Sara',
+            lastName: 'Feres',
+            email: 'Sara@Feres.org',
+            phoneNumber: '014754858868',
+            address: 'Mailands Street 108A',
+            city: 'Warsaw',
+            insuranceNumber: '4458625264',
+            insuranceExpiryDate: '01-01-2020',
+            profession: 'Web Application Developer',
+            company: 'E-Typo GmbH',
+            image: 'sara.jpeg'
         }];
 
 
@@ -201,7 +242,39 @@ angular
             form.$setUntouched();
         };
 
-
+        $scope.faq = [{
+            id: 0,
+            question: 'How can I add an employee ?',
+            answer: "Click on the tab: 'Add new Employee' and enter the information concerning your employee.",
+        }, {
+            id: 1,
+            question: 'How can I view an employees credential ?',
+            answer: "Go to 'Employees Factory' and click 'Show Credentials' button.",
+        }, {
+            id: 2,
+            question: 'How can I edit an employee ?',
+            answer: "Go to 'Employees Factory' and click 'edit' button.",
+        }, {
+            id: 3,
+            question: 'How can I delete an employee ?',
+            answer: "Go to 'Employees Factory' and click 'delete' button.",
+        }];
+        $scope.answer = [];
+        var lastVal = '';
+        $scope.showAnswer = function(id) {
+            if (lastVal != id) {
+                for (var i = 0; i < $scope.faq.length; i++) {
+                    if (i != id) {
+                        $scope.answer[i] = false;
+                    } else {
+                        $scope.answer[i] = true;
+                    }
+                }
+            } else {
+                $scope.answer[id] = !$scope.answer[id];
+            }
+            lastVal = id;
+        }
 
 
     }]);
